@@ -95,6 +95,28 @@ or
 
 Use [web3](https://github.com/ethereum/web3.js/)  for interacting the deployed contracts.
 
+##### Working
+There is a certain procedure in which `contracts` are deployed and one have to insure this procedure for proper working of the deployed `token`. 
+
+**Deploying** 
+
+`Balances` should be deployed first and using the `address` of the `balances contract` `Admin` and `HumanStandardToken` should be deployed.
+
+```mermaid
+graph LR
+balances --deploy--> deployed((Deployed))
+deployed --address--> Admin
+deployed --name, decimal, symbol, supply, address--> HumanStandardToken
+```
+To increase supply `mint tokens` only `Admin` can do that and `Admin` contract should be added to the `Balances` contract using `setModule(address, true)` 
+
+```mermaid 
+graph LR
+Balances --1. setModule--> Balances
+Admin --2. adminCreateTokens-->Balances
+
+```
+
 #### Testing 
 For testing `smart contracts` use 
 

@@ -98,7 +98,7 @@ Use [web3](https://github.com/ethereum/web3.js/)  for interacting the deployed c
 ##### Working
 There is a certain procedure in which `contracts` are deployed and one have to insure this procedure for proper working of the deployed `token`. 
 
-**Deploying** 
+
 
 `Balances` should be deployed first and using the `address` of the `balances contract` `Admin` and `HumanStandardToken` should be deployed.
 

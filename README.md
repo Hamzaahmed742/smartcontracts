@@ -1,3 +1,5 @@
+<span style="color:red">Airdrop can be tested using the *ERC20* contract. For testing run the test in *ERC20*</span>.
+
 # Smart Contacts
 Contains the implementations of the smart contracts for the tokenlab project, The implementation includes popular tokens like:  
 

@@ -591,7 +591,7 @@
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1481,
+                      "referencedDeclaration": 1426,
                       "src": "624:9:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -625,7 +625,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1512,
+                        "referencedDeclaration": 1457,
                         "src": "694:4:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ERC820Implementer_$607",
@@ -868,7 +868,7 @@
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1481,
+                      "referencedDeclaration": 1426,
                       "src": "851:9:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -1105,7 +1105,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1512,
+                        "referencedDeclaration": 1457,
                         "src": "1050:4:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ERC820Implementer_$607",
@@ -1829,7 +1829,7 @@
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1481,
+                      "referencedDeclaration": 1426,
                       "src": "624:9:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -1863,7 +1863,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1512,
+                        "referencedDeclaration": 1457,
                         "src": "694:4:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ERC820Implementer_$607",
@@ -2106,7 +2106,7 @@
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1481,
+                      "referencedDeclaration": 1426,
                       "src": "851:9:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -2343,7 +2343,7 @@
                         "name": "this",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1512,
+                        "referencedDeclaration": 1457,
                         "src": "1050:4:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ERC820Implementer_$607",
@@ -2489,5 +2489,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-07-18T07:07:52.233Z"
+  "updatedAt": "2018-07-21T05:21:42.208Z"
 }

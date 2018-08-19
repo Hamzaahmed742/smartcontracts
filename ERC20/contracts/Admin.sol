@@ -12,6 +12,7 @@ contract Admin{
     address public root;
     Balances public balances;
     mapping(address => bool) admins;
+
     
     modifier onlyRoot(){
         require(msg.sender == root);
@@ -39,6 +40,15 @@ contract Admin{
         return true;
     }
     
+    function bulkMintAndAssign(uint256[] _amount, address[] _receiver)  onlyRootOrAdmin public returns(bool) {
+        for(uint i = 0; i < _receiver.length; i++){
+            balances.incBalance(_receiver[i], _amount[i]);
+            balances.incTotalSupply(_amount[i]);
+            emit AdminMint(_receiver[i], "Token Minted", _amount[i]); 
+        }
+        return true;
+    }
+
     function moveBalance(address _from, address _to) onlyRootOrAdmin public returns(bool){
         uint256 bal = balances.getBalance(_from);
         balances.decBalance(_from, bal);

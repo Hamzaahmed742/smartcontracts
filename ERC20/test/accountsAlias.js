@@ -7,5 +7,5 @@ module.exports= accounts=> ({
     borderless: accounts[4],
     affiliate: accounts[5],
     affiliate2: accounts[7],
-    module: accounts[6],
+    module: accounts[6]
 });

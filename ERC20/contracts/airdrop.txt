@@ -1,0 +1,5 @@
+airdrop using balances contract (bypassing the transfer/transferFrom functions, But setModule must be called using this contract address for proper functionality)   X(Most of the evaluation of the funds in the particular address needed to be checked in the airdrop contract and the amount of the transactions can grow(blanceOf(address), decBalance(address, amount), incBalance(address, amount)))
+
+airdrop using admin contract (miniting token and assigning them to the specified address, contract owner or admin must send the transaction ) 
+
+airdrop using standardToken contract (must send some(total tokens needed in airdrop) tokens to the airdrop contract by the owner or the contract of the initial supply holder so that this contract can send tokens to the respective addresses )

@@ -15,8 +15,8 @@ contract HumanStandardToken is StandardToken {
     /// @param _balances address of the Balances contract
     constructor(
         string _name,
-        string _symbol,
         uint256 _granularity,
+        string _symbol,
         address _balances
     )
         public

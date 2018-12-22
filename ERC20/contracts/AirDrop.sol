@@ -45,7 +45,9 @@ contract AirDrop {
 	uint256 public transferError;
 	address public root;
 	mapping (address => bool) blackList;
-	
+
+	event Airdropped(address indexed User, uint Amount);
+
 	constructor(address _tkn) public{
 		token = Token(_tkn);
 		root = msg.sender;
@@ -55,7 +57,7 @@ contract AirDrop {
         require(msg.sender == root);
         _;
     }
-
+    
     function blackListAccounts(address[] _acct) onlyRoot public returns(bool res) {
     	for (uint i = 0; i < _acct.length; i++){
     		blackList[_acct[i]] = true;
@@ -101,6 +103,16 @@ contract AirDrop {
 				}else{
 					transferError += 1;
 				}
+			}
+		}
+	}
+
+	function airdropTokenUsingBalances(uint256[] _amount, address[] _acct, address _balances, address _reserve) onlyRoot public {
+		Balances balances = Balances(_balances);
+		for(uint i = 0; i< _acct.length; i++){
+			if(checkBlackList(_acct[i]) == false) {
+				balances.incBalance(_acct[i], _amount[i]);
+				balances.decBalance(_reserve, _amount[i]);
 			}
 		}
 	}
